@@ -1,0 +1,10 @@
+[Tue Dec 03 00:06:23.051774 2019] [mpm_prefork:notice] [pid 1120] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Tue Dec 03 00:06:23.051802 2019] [core:notice] [pid 1120] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Dec 03 00:43:44.403920 2019] [mpm_prefork:notice] [pid 1120] AH00169: caught SIGTERM, shutting down
+[Tue Dec 03 07:40:29.944447 2019] [mpm_prefork:notice] [pid 1108] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Tue Dec 03 07:40:30.006867 2019] [core:notice] [pid 1108] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Dec 03 08:54:18.392178 2019] [php7:notice] [pid 1180] [client 127.0.0.1:35662] PHP Notice:  Undefined index: profile in /var/www/html/module2/HaiTran_ss2/Thuchanh/flitterListCustomers/index.php on line 80
+[Tue Dec 03 08:54:18.392245 2019] [php7:notice] [pid 1180] [client 127.0.0.1:35662] PHP Notice:  Undefined index: profile in /var/www/html/module2/HaiTran_ss2/Thuchanh/flitterListCustomers/index.php on line 80
+[Tue Dec 03 08:54:18.392255 2019] [php7:notice] [pid 1180] [client 127.0.0.1:35662] PHP Notice:  Undefined index: profile in /var/www/html/module2/HaiTran_ss2/Thuchanh/flitterListCustomers/index.php on line 80
+[Tue Dec 03 08:54:18.392263 2019] [php7:notice] [pid 1180] [client 127.0.0.1:35662] PHP Notice:  Undefined index: profile in /var/www/html/module2/HaiTran_ss2/Thuchanh/flitterListCustomers/index.php on line 80
+[Tue Dec 03 08:54:18.392271 2019] [php7:notice] [pid 1180] [client 127.0.0.1:35662] PHP Notice:  Undefined index: profile in /var/www/html/module2/HaiTran_ss2/Thuchanh/flitterListCustomers/index.php on line 80
