@@ -5,15 +5,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $username = $_POST["username"];
             $email = $_POST["email"];
             $tel = $_POST["tel"];
+            $input = array(
+                'username' => $username,
+                'email' => $email,
+                'tel' => $tel
+            );
+            saveDataJson($input);
         }
     };
 };
-
-function deleteUser($index) {
-    $arr = getDataJson();
-    array_splice($arr,$index,1);
-    saveDataJson();
-}
 
 function checkInput()
 {
@@ -42,25 +42,16 @@ function checkInput()
 }
 
 
-function saveDataJson()
+function saveDataJson($input)
 {
-    //set the updated values
-    $input = array(
-        'username' => $_POST['username'],
-        'email' => $_POST['email'],
-        'tel' => $_POST['tel']
-    );
     $data = getDataJson();
 
-    //update the selected index
     array_push($data, $input);
 
-    //encode back to json
     $data2 = json_encode($data);
 
     file_put_contents('users.json', $data2);
 
-    //   header('location: index.php');
 }
 
 function getDataJson()
@@ -106,15 +97,25 @@ function getDataJson()
         border-radius: unset;
     }
 
+    table {
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+
+    td, th {
+        margin: 0px;
+        padding: 5px;
+        border: 1px solid black;
+    }
 </style>
 <body>
 <form method="post">
     <div class="login">
-        <h2>Login</h2>
+        <h2>Add user</h2>
         <input type="text" name="username" placeholder="username"/>
         <input type="email" name="email" placeholder="email"/>
         <input type="tel" name="tel" placeholder="tel"/>
-        <input type="submit" value="Submit"/>
+        <input type="submit" value="Add"/>
     </div>
     <div>
         <table>
@@ -127,20 +128,21 @@ function getDataJson()
             </tr>
             <?php
             checkInput();
+
             $arr = getDataJson();
             if (!empty($arr)):
-            saveDataJson();
-            foreach($arr as $key => $values):
-            ?>
-            <tr>
-                <td><?php echo $key ?></td>
-                <td><?php echo $values['username'] ?></td>
-                <td><?php echo $values['email'] ?></td>
-                <td><?php echo $values['tel'] ?></td>
-                <td><a href=''>Edit</a> <a href='' onclick='deleteUser(<?php echo $key ?>)'>Delete</a></td>
-            </tr>
-            <?php endforeach; ?>
-            <?php endif;?>
+                foreach ($arr as $key => $values):
+                    ?>
+                    <tr>
+                        <td><?php echo $key ?></td>
+                        <td><?php echo $values['username'] ?></td>
+                        <td><?php echo $values['email'] ?></td>
+                        <td><?php echo $values['tel'] ?></td>
+                        <td><a href="edit.php?index=<?php echo $key ?>">Edit</a>
+                            <a href="delete.php?index=<?php echo $key ?>">Delete</a></td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php endif; ?>
 
         </table>
     </div>

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e11d1fae-fe51-4255-9270-d11dd6cc3474" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/users.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../M2_SS3_PHP_404/HaiTran_ss3/Baitap/ClassStopWatch/classStopWatch.php" />
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="ServiceViewManager">
@@ -58,7 +59,8 @@
       <updated>1575339121021</updated>
       <workItem from="1575339122280" duration="2545000" />
       <workItem from="1575430140575" duration="5300000" />
-      <workItem from="1575447570031" duration="101000" />
+      <workItem from="1575447570031" duration="506000" />
+      <workItem from="1575473410948" duration="9548000" />
     </task>
     <servers />
   </component>
@@ -66,10 +68,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog" timestamp="1575339125869">
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1575474951967">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog/67.27.1299.741@67.27.1299.741" timestamp="1575339125869" />
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1575474951967" />
+    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog" timestamp="1575478948311">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog/67.27.1299.741@67.27.1299.741" timestamp="1575478948311" />
     <state x="205" y="31" key="SettingsEditor" timestamp="1575447671484">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
